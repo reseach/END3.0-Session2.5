@@ -27,7 +27,11 @@ Architecture
 MNIST Image-->                    MLP               
 
 
-                                                                --> Concatenate    --> CrossEntropy Loss --> Output
+                                                                --> Concatenate    --> CrossEntropy Loss --> Output1, Output2
 
 
 Random Number Generator-->RNG--> One Hot Encoding----->
+
+
+The output of the before the Fully connected layer is concatenated with the one hot encoded embedding.
+Cross entropy loss is a good loss for classification settings
